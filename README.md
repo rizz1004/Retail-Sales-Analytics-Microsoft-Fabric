@@ -329,21 +329,24 @@ Power BI Dashboard
 
 Retail-Sales-Analytics-Microsoft-Fabric/
 
+```text
+Retail-Sales-Analytics-Microsoft-Fabric/
+
 │
 ├── architecture/
-│ ├── architecture_diagram.png
-│ └── fabric_pipeline.png
+│   ├── architecture_diagram.png
+│   └── fabric_pipeline.png
 │
 ├── dashboard/
-│ └── screenshots/
-│ ├── Overview.png
-│ ├── Customer_Analytics.png
-│ └── Product_Analytics.png
+│   └── screenshots/
+│       ├── Overview.png
+│       ├── Customer_Analytics.png
+│       └── Product_Analytics.png
 │
 ├── notebooks/
-│ ├── Bronze_Notebook
-│ ├── Silver_Notebook
-│ └── Gold_Notebook
+│   ├── Bronze_Notebook
+│   ├── Silver_Notebook
+│   └── Gold_Notebook
 │
 ├── README.md
 └── LICENSE
