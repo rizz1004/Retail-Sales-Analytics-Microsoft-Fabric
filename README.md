@@ -10,7 +10,7 @@ This project demonstrates data ingestion, data transformation, dimensional model
 
 # Architecture
 
-The project follows a modern data engineering workflow:
+The project follows a modern end-to-end data engineering workflow using Microsoft Fabric Medallion Architecture with automated pipeline orchestration.
 
 ![Architecture Diagram](architecture/architecture_diagram.png)
 
@@ -59,6 +59,33 @@ Transformations:
 - Added ingestion timestamp
 - Performed data quality checks
 
+---
+
+# Data Pipeline Orchestration
+
+Implemented an automated data pipeline using **Microsoft Fabric Data Factory** to orchestrate the complete data flow.
+
+Pipeline Workflow:
+
+Bronze Notebook  
+↓  
+Silver Notebook  
+↓  
+Gold Notebook  
+
+
+Pipeline Features:
+
+- Automated execution of Bronze, Silver, and Gold layer transformations
+- Notebook dependency management
+- Sequential execution workflow
+- Centralized orchestration using Microsoft Fabric Pipeline
+- Ready for scheduled refresh and production deployment
+
+
+Pipeline Architecture:
+
+![Fabric Pipeline](architecture/fabric_pipeline.png)
 
 ---
 
@@ -254,6 +281,7 @@ Key insights generated:
 
 # Project Workflow
 
+
 CSV Files
 
 ↓
@@ -262,15 +290,19 @@ Microsoft Fabric Lakehouse
 
 ↓
 
-Bronze Layer
+Bronze Layer Notebook
 
 ↓
 
-Silver Layer
+Silver Layer Notebook
 
 ↓
 
-Gold Layer
+Gold Layer Notebook
+
+↓
+
+Fabric Data Pipeline Orchestration
 
 ↓
 
@@ -280,18 +312,41 @@ Semantic Model
 
 Power BI Dashboard
 
-
-
 ---
 
 # Future Enhancements
 
-- Add Microsoft Fabric Data Pipeline orchestration
-- Automate scheduled refresh
+- Schedule automated pipeline refresh
 - Add product category classification
 - Implement RFM customer segmentation
 - Add sales forecasting using Machine Learning
+- Implement real-time streaming analytics using Microsoft Fabric Real-Time Intelligence
 
+
+---
+
+# Repository Structure
+
+Retail-Sales-Analytics-Microsoft-Fabric/
+
+│
+├── architecture/
+│ ├── architecture_diagram.png
+│ └── fabric_pipeline.png
+│
+├── dashboard/
+│ └── screenshots/
+│ ├── Overview.png
+│ ├── Customer_Analytics.png
+│ └── Product_Analytics.png
+│
+├── notebooks/
+│ ├── Bronze_Notebook
+│ ├── Silver_Notebook
+│ └── Gold_Notebook
+│
+├── README.md
+└── LICENSE
 
 ---
 
