@@ -186,7 +186,7 @@ Implemented a **Star Schema** design for analytical reporting:
                       |
 dim_date  ----  fact_sales  ----  dim_product
 
-
+```
 
 ---
 
@@ -351,7 +351,7 @@ Retail-Sales-Analytics-Microsoft-Fabric/
 │
 ├── README.md
 └── LICENSE
-
+```
 ---
 
 # Author
