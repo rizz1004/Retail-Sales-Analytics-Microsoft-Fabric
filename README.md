@@ -178,12 +178,13 @@ Contains:
 
 # Data Model
 
-Implemented Star Schema:
+Implemented a **Star Schema** design for analytical reporting:
 
-             dim_customer
-                  |
-                  |
-dim_date ---- fact_sales ---- dim_product
+```text
+                 dim_customer
+                      |
+                      |
+dim_date  ----  fact_sales  ----  dim_product
 
 
 
