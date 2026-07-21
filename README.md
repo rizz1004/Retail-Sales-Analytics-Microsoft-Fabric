@@ -61,34 +61,6 @@ Transformations:
 
 ---
 
-# Data Pipeline Orchestration
-
-Implemented an automated data pipeline using **Microsoft Fabric Data Factory** to orchestrate the complete data flow.
-
-Pipeline Workflow:
-
-Bronze Notebook  
-↓  
-Silver Notebook  
-↓  
-Gold Notebook  
-
-
-Pipeline Features:
-
-- Automated execution of Bronze, Silver, and Gold layer transformations
-- Notebook dependency management
-- Sequential execution workflow
-- Centralized orchestration using Microsoft Fabric Pipeline
-- Ready for scheduled refresh and production deployment
-
-
-Pipeline Architecture:
-
-![Fabric Pipeline](architecture/fabric_pipeline.png)
-
----
-
 ## Gold Layer
 
 Business-ready analytical layer.
@@ -173,6 +145,33 @@ Contains:
 - Quantity Category
 - Return Flag
 
+
+---
+# Data Pipeline Orchestration
+
+Implemented an automated data pipeline using **Microsoft Fabric Data Factory** to orchestrate the complete data flow.
+
+Pipeline Workflow:
+
+Bronze Notebook  
+↓  
+Silver Notebook  
+↓  
+Gold Notebook  
+
+
+Pipeline Features:
+
+- Automated execution of Bronze, Silver, and Gold layer transformations
+- Notebook dependency management
+- Sequential execution workflow
+- Centralized orchestration using Microsoft Fabric Pipeline
+- Ready for scheduled refresh and production deployment
+
+
+Pipeline Architecture:
+
+![Fabric Pipeline](architecture/fabric_pipeline.png)
 
 ---
 
